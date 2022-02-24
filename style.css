@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    
+}
+
+ body .mainContainer{
+    display: grid;
+    grid-template-rows: 200px 370px;
+    grid-template-columns: 1.3fr 2fr 1.3fr;
+    height: 100%;
+    
+}
+.left{
+    grid-row: 1/3;
+    width: 100%;
+    background-color: cyan;
+    border-right: 1px solid black;
+    border-radius: 30px;
+}
+.mid{
+    grid-row: 1/3;
+    background-color: lightblue;
+    border-right: 1px solid black;
+    position: relative;
+    width: 100%;
+    border-radius: 30px;
+}
+.right{
+    grid-row: 1/3;
+    width: 100%;
+    background-color: cadetblue;
+    border-radius: 30px;
+}
+.ka{
+    background-color: cornsilk;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     border-radius: 30px;
+     
+     
+}
+
+.input input{
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+    width: 80%;
+    height: 35px;
+    border-radius: 30px;
+   
+}
+
+.fallingBox{
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+   
+}
+
+.fallingword{
+    
+    background-color: #fff;
+    background-color: lightcoral;
+    border-radius: 30px;
+    padding: 5px;
+    
+}
+.correctwords{
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    overflow: hidden;
+    
+}
+.incorrectwords{
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    overflow: hidden;
+
+}
+
+.word{
+    margin: 8px;
+    background-color: #ccc;
+    width: 80%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+.score{
+    position: absolute;
+    bottom: 15px;
+    right: 5px;
+    height: 35px;
+    background-color: lightcoral;
+    width: 90px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    border: black;
+}
+.winbox{
+    background-color: red;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.losebox{
+    background-color: red;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
